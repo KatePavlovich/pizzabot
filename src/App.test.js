@@ -67,3 +67,11 @@ test('It should show error if coordinates are out of the board', () => {
 
   expect(screen.getByText(/far from available delivery zone/i)).toBeInTheDocument();
 });
+
+test('It should show error if coordinates are less then 0', () => {
+  const { inputElement, button } = setup();
+  fireEvent.change(inputElement, { target: { value: '5x5 (0, -2)' } });
+  fireEvent.click(button);
+
+  expect(screen.getByText(/far from available delivery zone/i)).toBeInTheDocument();
+});
