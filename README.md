@@ -1,4 +1,4 @@
-# Description
+## Description
 
 This project was developed for a pizzabot challenge.
 Pizzabot - a robot that delivers pizza. 
@@ -9,16 +9,16 @@ Script should return a list of instructions for getting Pizzabot to those locati
 
 The project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Version
+## Version
 
 1.0.0
 
-# Requirements
+## Requirements
 
 - Node JS 16.14.2 or higher
 - npm 7.21.1 or higher
 
-## To run the pizzabot:
+## How to run the app
 
 - clone this repo
 - enter cloned repo (ex, in console `cd pizzabot`)
@@ -53,14 +53,9 @@ D: Drop pizza
 
 For `5x5 (1, 3) (4, 4)` one correct solution would be: ENNNDEEEND
 
+## How to run test
 
-## To run tests
-
-in the project directory in terminal run `npm test`
+In the project directory in terminal run `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-
-
-
