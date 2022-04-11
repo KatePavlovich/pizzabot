@@ -3,9 +3,9 @@ export const getCoordinates = (str) => {
   const coordinates = [ ...str ]
     .slice(firstCoord)
     .join('')
-    .replaceAll(' ', '')
+    .replace(/\s/g, '')
     .split(')(')
-    .map((i) => i.replaceAll('(', '').replaceAll(')', '').split(','));
+    .map((i) => i.replace(/\(/g, '').replace(/\)/g, '').split(','));
 
   return coordinates;
 };
