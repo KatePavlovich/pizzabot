@@ -3,5 +3,5 @@ export const checkCoordinates = (coordinates) => {
 };
 
 export const checkCoordinateValues = (coordinates, boardSize) => {
-  return coordinates.some(([ y, x ]) => Number(y) > boardSize[1] || Number(x) > boardSize[0]);
+  return coordinates.some(([ y, x ]) => Number(y) >= boardSize[1] || Number(x) >= boardSize[0]);
 };

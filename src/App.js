@@ -77,7 +77,12 @@ export const App = () => {
       <form className={styles.form} onSubmit={handleSubmit}>
         <label>
           Coordinates for pizzabot:
-          <input value={command} onChange={handleChange} placeholder='insert the coordinates' />
+          <input
+            className={styles.input}
+            value={command}
+            onChange={handleChange}
+            placeholder='insert the coordinates'
+          />
         </label>
         <button type='submit' disabled={!!steps.length} className={styles.button} data-testid='submitButton'>
           Start delivery
